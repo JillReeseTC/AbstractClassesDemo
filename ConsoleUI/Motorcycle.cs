@@ -14,10 +14,16 @@ namespace ConsoleUI
 
             }
         
-            int NumberOfWheels = 2;
-            bool HasWindshield = false;
+           public int NumberOfWheels { get; set; } = 2;
+           public bool HasWindshield { get; set; } = false;
 
-            public override void DriveAbstract()
+        public override void PrintProperties()
+        {
+            Console.WriteLine($"Do Motorcycles have windshields? {HasWindshield}");
+            Console.WriteLine($"How many wheels on a Motorcycle? {NumberOfWheels}");
+        }
+
+        public override void DriveAbstract()
             {
                 Console.WriteLine($"Hope it's not raining!");
             }

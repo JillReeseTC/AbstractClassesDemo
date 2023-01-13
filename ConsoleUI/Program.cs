@@ -49,10 +49,10 @@ namespace ConsoleUI
             foreach (var vehicle in myVehicleList)
             {
                 Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
-                var vehType = vehicle.GetType().Name;
-                Console.WriteLine(vehType);
-                
+                //var vehType = vehicle.GetType().Name;
 
+
+                vehicle.PrintProperties();
                 vehicle.DriveVirtual();
                 vehicle.DriveAbstract();
                 Console.WriteLine();

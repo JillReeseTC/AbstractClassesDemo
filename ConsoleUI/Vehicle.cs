@@ -15,6 +15,8 @@ namespace ConsoleUI
 
         public abstract void DriveAbstract();
 
+        public abstract void PrintProperties();
+
         public virtual void DriveVirtual()
         {
             Console.WriteLine($"Driving down the road virtually!");
