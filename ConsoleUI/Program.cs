@@ -49,12 +49,9 @@ namespace ConsoleUI
             foreach (var vehicle in myVehicleList)
             {
                 Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
-                var vehType = vehicle.GetType();
+                var vehType = vehicle.GetType().Name;
                 Console.WriteLine(vehType);
-                if (vehType == typeof(Car))
-                {
-                    Car.NumberOfWheels;
-                }
+                
 
                 vehicle.DriveVirtual();
                 vehicle.DriveAbstract();

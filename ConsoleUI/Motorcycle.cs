@@ -13,7 +13,7 @@ namespace ConsoleUI
             {
 
             }
-
+        
             int NumberOfWheels = 2;
             bool HasWindshield = false;
 

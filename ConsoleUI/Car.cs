@@ -14,8 +14,8 @@ namespace ConsoleUI
         }
 
         //Properties
-        bool HasTrunk { get; set; } = true;
-        int NumberOfWheels { get; set; } = 4;
+        public bool HasTrunk { get; set; } = true;
+        public int NumberOfWheels { get; set; } = 4;
 
         public override void DriveAbstract() 
         {
