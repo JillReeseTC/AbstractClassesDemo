@@ -46,15 +46,23 @@ namespace ConsoleUI
 
             myVehicleList.Add(harley);
 
-            foreach (var vehicle in myVehicleList) 
+            foreach (var vehicle in myVehicleList)
             {
-                Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}\n");
-            
+                Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
+                var vehType = vehicle.GetType();
+                Console.WriteLine(vehType);
+                if (vehType == typeof(Car))
+                {
+                    Car.NumberOfWheels;
+                }
+
+                vehicle.DriveVirtual();
+                vehicle.DriveAbstract();
+                Console.WriteLine();
+
             }
+
             
-
-
-
            
         }
     }

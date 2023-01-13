@@ -14,10 +14,10 @@ namespace ConsoleUI
         }
 
         //Properties
-        bool HasTrunk = true;
-        int NumberOfWheels = 4;
+        bool HasTrunk { get; set; } = true;
+        int NumberOfWheels { get; set; } = 4;
 
-        public override void DriveAbstract()
+        public override void DriveAbstract() 
         {
             Console.WriteLine($"Sunroof is open and the weather is clear!");
         }
