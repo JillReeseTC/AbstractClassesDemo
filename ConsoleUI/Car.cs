@@ -24,7 +24,7 @@ namespace ConsoleUI
 
         public override void DriveVirtual()
         {
-                 
+            base.DriveVirtual();      
         }
 
     }

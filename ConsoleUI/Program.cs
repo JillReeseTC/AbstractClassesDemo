@@ -10,10 +10,49 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            List<Vehicle> myVehicleList = new List<Vehicle>();   
+            var myVehicleList = new List<Vehicle>();   
 
-            Vehicle sedan = new Car();
+            var sedan = new Car() 
+            { 
+                Year = "2020", 
+                Make = "Toyota", 
+                Model = "Camry"
+            };
+
+            myVehicleList.Add(sedan);
+
             Vehicle coupe = new Car();
+            coupe.Year = "2016";
+            coupe.Make = "Mazda";
+            coupe.Model = "Miata";
+
+            myVehicleList.Add(coupe);
+
+            Vehicle gullwing = new Motorcycle() 
+            { 
+                Year = "2021", 
+                Make = "Honda", 
+                Model = "Edge"
+            };
+
+            myVehicleList.Add(gullwing);
+
+            var harley = new Motorcycle() 
+            { 
+                Year = "2023", 
+                Make = "Harley", 
+                Model = "Brass" 
+            };
+
+            myVehicleList.Add(harley);
+
+            foreach (var vehicle in myVehicleList) 
+            {
+                Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
+            
+            }
+            
+
 
 
            
