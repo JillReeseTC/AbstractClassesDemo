@@ -48,7 +48,7 @@ namespace ConsoleUI
 
             foreach (var vehicle in myVehicleList) 
             {
-                Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
+                Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}\n");
             
             }
             
